@@ -5,6 +5,8 @@ class Article < ActiveRecord::Base
 	#specify relationship to other models
 
 	validates :title, presence: true
-	validates :content, presence:true
-	validates :categories, presence:true
+	validates :content, presence: true
+	validates :categories, presence: true
+
+	
 end
