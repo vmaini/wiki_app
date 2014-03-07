@@ -6,7 +6,5 @@ class Article < ActiveRecord::Base
 
 	validates :title, presence: true
 	validates :content, presence: true
-	validates :categories, presence: true
-
-	
+	validates :categories, presence: true	
 end
