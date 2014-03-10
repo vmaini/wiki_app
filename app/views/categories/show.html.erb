@@ -1,0 +1,8 @@
+<div>
+	<h1><%= @category.name %></h1>
+	<p> <%= @category.name %> has <%= @category.articles.count %> articles. </p>
+	<p> <% @category.articles.order(:title).each do |article| %>
+		<%= link_to article.title, article %><br /> 
+		<% end %>
+	</p>
+</div>
