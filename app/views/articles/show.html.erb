@@ -4,5 +4,5 @@
 	<p>Filed under: <% @article.categories.each do |category| %>
 		<%= category.name %>&nbsp;<% end %>
 	</p>
-	<div> <% @article.content %> </div>
+	<div> <%= @article.content %> </div>
 </div>
